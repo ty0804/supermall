@@ -27,7 +27,7 @@ export default {
     imageLoad() {
       // GoodsListItem->Home 非父子组件通信，使用事件总线$bus
       // console.log(this.$bus); // 本身没有这个东西，要去Vue原型里面加
-      // 每一张图片加载完成就发射一次事件
+      // 每一张图片加载完成就发射一次事件.
       this.$bus.$emit("itemImageLoad");
     },
     itemClick() {
